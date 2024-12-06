@@ -1,0 +1,19 @@
+<body>
+    <div id="header"></div>
+    <main>
+        <!-- תוכן הדף -->
+    </main>
+    <div id="footer"></div>
+
+    <script>
+        // טוען את ה-header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        // טוען את ה-footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
