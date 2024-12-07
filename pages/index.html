@@ -13,112 +13,135 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
-    <!-- AOS Animation Library -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <header class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Maya Ron</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <a class="navbar-brand" href="#">Maya Ron</a>
+            <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!-- Home Section -->
-    <section id="home" class="text-center py-5" style="background-color: #f9f9f9;">
-        <div class="container">
-            <h1 data-aos="fade-up">Hi, I'm Maya Ron</h1>
-            <p data-aos="fade-up" data-aos-delay="100">A Web Developer and CS & Entrepreneurship Student</p>
-            <button class="btn btn-primary mt-3" data-aos="fade-up" data-aos-delay="200">Get in Touch</button>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="home" class="fade-in">
         <div class="container text-center">
-            <h2 data-aos="fade-up">About Me</h2>
-            <p data-aos="fade-up" data-aos-delay="100">I am passionate about building web applications and exploring
-                innovative solutions.</p>
+            <h1>Hi, I'm Maya Ron</h1>
+            <p>Web Developer & CS Student</p>
+            <button id="download-cv" class="btn">Download My CV</button>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light">
+    <section id="projects" class="fade-in">
         <div class="container text-center">
-            <h2 data-aos="fade-up">My Projects</h2>
-            <div class="row mt-4">
-                <div class="col-md-4" data-aos="zoom-in">
-                    <div class="card">
-                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Description of project 1.</p>
-                        </div>
+            <h2>My Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <h3>Project 1</h3>
+                        <p>A brief description of Project 1</p>
+                        <button class="project-btn" data-url="https://github.com/mayaron31/project1">View More</button>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="card">
-                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">Description of project 2.</p>
-                        </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <h3>Project 2</h3>
+                        <p>A brief description of Project 2</p>
+                        <button class="project-btn" data-url="https://github.com/mayaron31/project2">View More</button>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="card">
-                        <img src="project3.jpg" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">Description of project 3.</p>
-                        </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <h3>Project 3</h3>
+                        <p>A brief description of Project 3</p>
+                        <button class="project-btn" data-url="https://github.com/mayaron31/project3">View More</button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+        <div class="container text-center">
+            <h2>My Skills</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="skill-card">
+                        <h3>HTML & CSS</h3>
+                        <div class="progress-bar"><span class="progress" style="width: 90%;"></span></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill-card">
+                        <h3>JavaScript</h3>
+                        <div class="progress-bar"><span class="progress" style="width: 80%;"></span></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill-card">
+                        <h3>React</h3>
+                        <div class="progress-bar"><span class="progress" style="width: 70%;"></span></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill-card">
+                        <h3>Python</h3>
+                        <div class="progress-bar"><span class="progress" style="width: 85%;"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="fade-in">
+        <div class="container text-center">
+            <h2>My Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">2012 - Started High School</div>
+                <div class="timeline-item">2018 - Military Service</div>
+                <div class="timeline-item">2022 - Started University</div>
+                <div class="timeline-item">2024 - Joined Paradox</div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <section id="contact" class="fade-in">
         <div class="container text-center">
-            <h2 data-aos="fade-up">Contact Me</h2>
-            <form data-aos="fade-up" data-aos-delay="100">
-                <input type="text" class="form-control mb-3" placeholder="Your Name">
-                <input type="email" class="form-control mb-3" placeholder="Your Email">
-                <textarea class="form-control mb-3" rows="5" placeholder="Your Message"></textarea>
-                <button class="btn btn-primary">Send</button>
-            </form>
+            <h2>Contact Me</h2>
+            <div id="social-links">
+                <button id="linkedin-link">LinkedIn</button>
+                <button id="instagram-link">Instagram</button>
+                <button id="facebook-link">Facebook</button>
+                <button id="github-link">GitHub</button>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center py-3" style="background-color: #333; color: white;">
-        <p>© 2024 Maya Ron. All Rights Reserved.</p>
+    <footer>
+        <div class="container text-center">
+            <p>© 2024 Maya Ron. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- AOS Library -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1000 });
-    </script>
+    <!-- Custom JS -->
+    <script src="../script/script.js"></script>
 </body>
 
 </html>

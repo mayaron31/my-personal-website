@@ -1,0 +1,141 @@
+/* Global Styles */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #2b6777;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+header {
+    background-color: #c8d8e4;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: #2b6777;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #52ab98;
+}
+
+/* Sections */
+section {
+    padding: 3rem 0;
+}
+
+section:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+section:nth-child(odd) {
+    background-color: #52ab98;
+    color: #ffffff;
+}
+
+/* Buttons */
+.btn {
+    background-color: #52ab98;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #73c1af;
+}
+
+/* Footer */
+footer {
+    background-color: #c8d8e4;
+    color: #2b6777;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Skills Section */
+.skill-card {
+    margin: 20px;
+    text-align: center;
+}
+
+.progress-bar {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    height: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.progress {
+    background-color: #52ab98;
+    height: 100%;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Timeline Section */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.timeline-item {
+    background-color: #2b6777;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.timeline-item:hover {
+    transform: scale(1.1);
+    background-color: #52ab98;
+}
+
+/* Projects Section */
+.project-card {
+    background-color: #c8d8e4;
+    color: #2b6777;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-btn {
+    background-color: #52ab98;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.project-btn:hover {
+    background-color: #73c1af;
+}
