@@ -139,3 +139,68 @@ footer {
 .project-btn:hover {
     background-color: #73c1af;
 }
+
+/* Hero Section */
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* הגובה יהיה תמיד גובה המסך */
+    overflow: hidden;
+    background-color: #ffffff; /* רקע לבן */
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Main Image */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* מבטיח שהתמונה תכסה את כל השטח */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* מבטיח שהתמונה תהיה ברקע */
+}
+
+
+/* Hero Text */
+.hero-text {
+    position: relative; /* שומר את הטקסט מעל התמונה */
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff; /* טקסט לבן */
+    background: rgba(0, 0, 0, 0.5); /* רקע שחור חצי שקוף לטקסט */
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1; /* שומר את הטקסט מעל התמונה */
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn {
+    background-color: #52ab98;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-text .btn:hover {
+    background-color: #73c1af;
+}
