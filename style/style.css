@@ -84,30 +84,94 @@ footer {
     border-radius: 5px;
     display: block;
 }
-
 /* Timeline Section */
+.timeline-section {
+    padding: 2rem;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2b6777;
+}
+
 .timeline {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin: 20px 0;
 }
 
 .timeline-item {
+    cursor: pointer;
     background-color: #2b6777;
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
-    width: 60%;
+    width: fit-content;
     text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
+.timeline-item.active {
+    background-color: #52ab98;
+}
+
 
 .timeline-item:hover {
     transform: scale(1.1);
-    background-color: #52ab98;
 }
+.timeline-content {
+    display: none;
+    width: 80%;
+    background-color: #f2f2f2;
+    color: #2b6777;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.timeline-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.timeline-content p {
+    font-size: 1.1rem;
+    color: #2b6777;
+    line-height: 1.6;
+}
+/* עיצוב תמונות */
+.timeline-image {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Media Queries למסכים קטנים */
+@media (max-width: 768px) {
+    .timeline-image {
+        width: 80px; /* התמונות קטנות יותר */
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-image {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
 
 /* Projects Section */
 .project-card {
@@ -159,7 +223,7 @@ footer {
 /* Main Image */
 .hero-image {
     max-width: 100%; /* Ensures image fits within the container */
-    height: auto; /* Maintains natural aspect ratio */
+    height: 50%; /* Maintains natural aspect ratio */
     object-fit: cover; /* Adjusts image size without cropping */
     display: block; /* Ensures it behaves as a block-level element */
     margin-bottom: 20px; /* Adds spacing below the image */
