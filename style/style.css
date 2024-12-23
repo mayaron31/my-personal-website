@@ -156,21 +156,6 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Media Queries למסכים קטנים */
-@media (max-width: 768px) {
-    .timeline-image {
-        width: 80px; /* התמונות קטנות יותר */
-        height: 80px;
-    }
-}
-
-@media (max-width: 480px) {
-    .timeline-image {
-        width: 60px;
-        height: 60px;
-    }
-}
-
 
 
 /* Projects Section */
