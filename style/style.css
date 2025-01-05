@@ -97,6 +97,16 @@ footer {
     color: #2b6777;
 }
 
+/* Timeline Section Background */
+#timeline {
+    position: relative;
+    background-image: url('../images/timeline1.png'); /* Adjust the path to your timeline.png */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 3rem 0; /* Adds padding for spacing */
+}
+
 .timeline {
     display: flex;
     flex-direction: column;
@@ -207,12 +217,13 @@ footer {
 
 /* Main Image */
 .hero-image {
-    max-width: 100%; /* Ensures image fits within the container */
-    height: 50%; /* Maintains natural aspect ratio */
-    object-fit: cover; /* Adjusts image size without cropping */
-    display: block; /* Ensures it behaves as a block-level element */
-    margin-bottom: 20px; /* Adds spacing below the image */
+    width: 100%; /* Makes the image span the full width of the window */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Removes any inline spacing issues */
+    object-fit: cover; /* Ensures the image fits its container without distortion */
+    object-position: center; /* Centers the image within its container */
 }
+
 /* HERO TEXT */
 .hero-text {
     text-align: center;
