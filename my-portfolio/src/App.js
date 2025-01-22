@@ -1,24 +1,47 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Timeline from "./components/Timeline";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import './styles/style.css';
 
 function App() {
   return (
-    <Router>
+    <div>
+      {/* Navbar Component */}
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/timeline" element={<Timeline />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+
+      {/* Home Section */}
+      <section id="home">
+        <Hero />
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects">
+        <Projects />
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills">
+        <Skills />
+      </section>
+
+      {/* Timeline Section */}
+      <section id="timeline">
+        <Timeline />
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact">
+        <Contact />
+      </section>
+
+      {/* Footer Component */}
+      <Footer />
+    </div>
   );
 }
 
