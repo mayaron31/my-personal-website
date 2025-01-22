@@ -1,34 +1,101 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-scroll";
 
-const Navbar = () => {
+function Navbar() {
+    const [navActive, setNavActive] = useState(false);
+
+    const toggleNav = () => {
+        setNavActive(!navActive);
+    };
+
+    const closeMenu = () => {
+        setNavActive(false);
+    };
+
     return (
-        <header className="navbar navbar-expand-lg">
-            <div className="container">
-                <a className="navbar-brand" href="/">Maya Ron</a>
-                <div className="collapse navbar-collapse">
-                    <ul className="navbar-nav ms-auto">
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/">Home</Link>
-                        </li>
-
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/projects">Projects</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/skills">Skills</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/timeline">Timeline</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/contact">Contact Me</Link>
-                        </li>
-                    </ul>
+        <nav className={`navbar ${navActive ? "active" : ""}`}>
+            <div className="navbar-container">
+                {/* Logo */}
+                <div className="navbar-logo">
+                    <a href="#home">Maya Ron</a>
                 </div>
+
+                {/* Hamburger Menu */}
+                <div
+                    className={`navbar-hamburger ${navActive ? "active" : ""}`}
+                    onClick={toggleNav}
+                >
+                    <span className="line"></span>
+                    <span className="line"></span>
+                    <span className="line"></span>
+                </div>
+
+                {/* Navbar Links */}
+                <ul className={`navbar-links ${navActive ? "active" : ""}`}>
+                    <li>
+                        <Link
+                            to="home"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            onClick={closeMenu}
+                        >
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="projects"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            onClick={closeMenu}
+                        >
+                            Projects
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="skills"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            onClick={closeMenu}
+                        >
+                            Skills
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="timeline"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            onClick={closeMenu}
+                        >
+                            Timeline
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            onClick={closeMenu}
+                        >
+                            Contact
+                        </Link>
+                    </li>
+                </ul>
             </div>
-        </header>
+        </nav>
     );
-};
+}
 
 export default Navbar;
