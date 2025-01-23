@@ -2,19 +2,17 @@ import React from "react";
 
 const Hero = () => {
     return (
-        <section id="home">
+        <section id="home" className="hero-section">
             <div className="hero-container">
-                <div className="hero-text">
-                    <h1>Welcome to My Portfolio</h1>
-                    <p>Discover my projects, skills, and journey</p>
-                    <button
-                        id="download-cv"
-                        className="btn"
-                        onClick={() => window.open("/assets/CV/cv.pdf", "_blank")}
-                    >
-                        Download My CV
-                    </button>
-                </div>
+                <h1 className="main-title">Maya Ron</h1>
+                <p className="body-text">Welcome to my personal portfolio</p>
+                <a
+                    href="./assets/CV.pdf"
+                    download="Maya_Ron_CV"
+                    className="btn cv-download-btn"
+                >
+                    Download My CV
+                </a>
             </div>
         </section>
     );
