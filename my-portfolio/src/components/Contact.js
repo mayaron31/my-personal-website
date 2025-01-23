@@ -1,48 +1,31 @@
 import React from "react";
 
-function ContactMe() {
+export default function Contact() {
     return (
-        <section id="contact" className="contact-section">
-            <div className="contact-header">
-                <h2>Contact Me</h2>
-                <p>Feel free to reach out for any inquiries or collaborations!</p>
-            </div>
-            <form className="contact-form">
-                <div className="form-group">
-                    <label htmlFor="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name" required />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name" required />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="email">Email</label>
-                    <input type="email" id="email" name="email" required />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="topic">Choose a Topic</label>
-                    <select id="topic" name="topic" required>
-                        <option value="">Select One...</option>
-                        <option value="collaboration">Collaboration</option>
-                        <option value="inquiry">General Inquiry</option>
-                        <option value="feedback">Feedback</option>
-                    </select>
-                </div>
-                <div className="form-group">
-                    <label htmlFor="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" className="btn-primary">
-                    Submit
+        <section id="contact" className="contact--section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out with any questions or opportunities!</p>
+            <form className="contact--form--container">
+                <label htmlFor="name">
+                    <span>Full Name</span>
+                    <input type="text" id="name" placeholder="Enter your name" required />
+                </label>
+                <label htmlFor="email">
+                    <span>Email Address</span>
+                    <input type="email" id="email" placeholder="Enter your email" required />
+                </label>
+                <label htmlFor="subject">
+                    <span>Subject</span>
+                    <input type="text" id="subject" placeholder="Subject of your message" required />
+                </label>
+                <label htmlFor="message">
+                    <span>Message</span>
+                    <textarea id="message" rows="5" placeholder="Type your message..." required></textarea>
+                </label>
+                <button type="submit" className="btn">
+                    Send Message
                 </button>
             </form>
         </section>
     );
 }
-
-export default ContactMe;
