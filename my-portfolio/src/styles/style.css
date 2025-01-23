@@ -18,79 +18,96 @@ header {
 
 /* Navbar Container */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #c8d8e4;
-    position: fixed;
-    width: 100%;
+    position: fixed; /* Ensures navbar stays at the top */
     top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar-logo a {
-    text-decoration: none;
+    width: 100%;
+    z-index: 10; /* Ensures navbar is above other elements */
+    background-color: rgba(200, 216, 228, 0.9); /* Semi-transparent background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(200, 216, 228, 1);
+    z-index: 10;
+}
+
+.navbar-logo {
+    margin-left: 20px;
     font-size: 1.5rem;
     font-weight: bold;
     color: #2b6777;
-  }
-  
-  /* Hamburger Menu */
-  .navbar-hamburger {
+}
+
+.navbar-hamburger {
     display: none;
-    flex-direction: column;
     cursor: pointer;
-  }
-  
-  .navbar-hamburger .line {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20px;
+}
+
+.navbar-hamburger .line {
     width: 25px;
     height: 3px;
     background-color: #2b6777;
-    margin: 4px 0;
-  }
-  
-  /* Navbar Links */
-  .navbar-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-  }
-  
-  .navbar-links li a {
-    text-decoration: none;
-    font-size: 1rem;
+    border-radius: 2px;
+}
+
+.navbar-links li {
+    margin-right: 15px; /* מרווח בין הלשוניות */
+    display: inline-block; /* כדי להבטיח שהן בשורה */
+}
+
+.navbar-links li a {
+    padding: 10px 15px; /* הוספת רווח פנימי */
+    text-decoration: none; /* ביטול קו תחתון */
     color: #2b6777;
-    transition: color 0.3s;
-  }
-  
-  .navbar-links li a:hover {
-    color: #52ab98;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+    font-family: "שם הגופן החדש", sans-serif; /* החלפת גופן */
+}
+
+.navbar-links li a:hover {
+    color: #52ab98; /* שינוי צבע בהובר */
+}
+
+
+@media (max-width: 768px) {
     .navbar-hamburger {
-      display: flex;
+        display: flex;
     }
-  
+
     .navbar-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background-color: #c8d8e4;
-      width: 100%;
-      text-align: center;
-      padding: 1rem 0;
+        display: none;
     }
-  
+
     .navbar-links.active {
-      display: flex;
+        display: flex;
     }
-  }
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    margin-top: 60px; /* Adjusted to account for the navbar height */
+}
+
   
 
 /* Sections */
@@ -287,26 +304,32 @@ footer {
     margin: 0; /* Removes unnecessary margin */
 }
 
-/* Main Image */
-.hero-image {
-    width: 100%; /* Makes the image span the full width of the window */
-    height: auto; /* Maintains the aspect ratio of the image */
-    display: block; /* Removes any inline spacing issues */
-    object-fit: cover; /* Ensures the image fits its container without distortion */
-    object-position: center; /* Centers the image within its container */
+
+.main-photo-container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
 }
+
+.main-photo {
+    width: 100%; /* תמלא את רוחב ההורה */
+    max-width: 1200px; /* לא לעבור רוחב מסוים */
+    height: auto; /* שומר על יחס גובה-רוחב */
+    border-radius: 10px; /* פינות מעוגלות */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* צל מסביב */
+}
+
 
 /* HERO TEXT */
 .hero-text {
-    text-align: center;
-    color: #ffffff; /* Ensures text is visible */
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 20px 40px; /* Adjusts padding for spacing */
-    margin-top: -20px; /* Slight overlap with the image to reduce space */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
-    width: 100%; /* Ensures the text does not stretch too wide */
-    z-index: 2; /* Ensures text is above the image */
+    position: relative;
+    z-index: 10; /* מעל הרקע */
+    background-color: #9c9c9c; /* צבע אפור */
+    color: #fffbfb;
+    padding: 20px;
+    border-radius: 10px;
 }
+
 .hero-text h1 {
     font-size: 2.5rem; /* Adjust headline size */
     font-weight: bold;
