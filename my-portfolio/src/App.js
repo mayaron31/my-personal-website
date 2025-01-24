@@ -19,6 +19,11 @@ function App() {
         <Hero />
       </section>
 
+      {/* Timeline Section */}
+      <section id="timeline">
+        <Timeline />
+      </section>
+
       {/* Projects Section */}
       <section id="projects">
         <Projects />
@@ -29,10 +34,7 @@ function App() {
         <Skills />
       </section>
 
-      {/* Timeline Section */}
-      <section id="timeline">
-        <Timeline />
-      </section>
+
 
       {/* Contact Section */}
       <section id="contact">
