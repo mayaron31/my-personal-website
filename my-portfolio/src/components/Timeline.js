@@ -1,53 +1,37 @@
-import React, { useState } from "react";
+import React from 'react';
 
-const timelineData = [
-    {
-        year: 2012,
-        img: "/assets/images/theater.jpg",
-        text: "I studied at 'Hakfar Hayarok' high school, specializing in theater and biology. I volunteered at AMCHA and Latet.",
-    },
-    {
-        year: 2018,
-        img: "/assets/images/tir.jpg",
-        text: "I joined the military as an Operations Sergeant in the infantry, later promoted to Officer.",
-    },
-    {
-        year: 2022,
-        img: "/assets/images/reichman.jpg",
-        text: "I started my studies at Reichman University in Computer Science & Entrepreneurship.",
-    },
-    {
-        year: 2024,
-        img: "/assets/images/paradox.jpg",
-        text: "I joined Paradox.AI as a Data Intern and later became an employee.",
-    },
-];
-
-const Timeline = () => {
-    const [activeYear, setActiveYear] = useState(null);
-
-    const toggleContent = (year) => {
-        setActiveYear(activeYear === year ? null : year);
-    };
-
+function Timeline() {
     return (
-        <section id="timeline">
-            <h2>Timeline</h2>
-            <div className="timeline">
-                {timelineData.map((item) => (
-                    <div key={item.year} className="timeline-item" onClick={() => toggleContent(item.year)}>
-                        <div>{item.year}</div>
-                        {activeYear === item.year && (
-                            <div className="timeline-content">
-                                <img src={item.img} alt={`${item.year}`} className="timeline-image" />
-                                <p>{item.text}</p>
-                            </div>
-                        )}
-                    </div>
-                ))}
+        <section className="timeline">
+            <h2 className="timeline-title">My Journey</h2>
+            <div className="timeline-content">
+                <div className="timeline-item">
+                    <h4>2012</h4>
+                    <p>
+                        Graduated from high school with a focus on arts and biology. Volunteered in several organizations.
+                    </p>
+                </div>
+                <div className="timeline-item">
+                    <h4>2018</h4>
+                    <p>
+                        Enlisted in the IDF as an operations officer. Led teams and participated in major operations.
+                    </p>
+                </div>
+                <div className="timeline-item">
+                    <h4>2020</h4>
+                    <p>
+                        Began my studies in Computer Science and Entrepreneurship at Reichman University.
+                    </p>
+                </div>
+                <div className="timeline-item">
+                    <h4>2024</h4>
+                    <p>
+                        Participated in a student exchange program at TU Darmstadt, Germany, studying advanced computer science courses.
+                    </p>
+                </div>
             </div>
         </section>
     );
-};
+}
 
 export default Timeline;

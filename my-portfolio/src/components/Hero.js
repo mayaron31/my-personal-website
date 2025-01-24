@@ -1,18 +1,16 @@
 import React from "react";
+import mainPagePhoto from "../assets/images/main-page-photo.jpg";
 
 const Hero = () => {
     return (
-        <section id="home" className="hero-section">
-            <div className="hero-container">
-                <h1 className="main-title">Maya Ron</h1>
-                <p className="body-text">Welcome to my personal portfolio</p>
-                <a
-                    href="./assets/CV.pdf"
-                    download="Maya_Ron_CV"
-                    className="btn cv-download-btn"
-                >
-                    Download My CV
-                </a>
+        <section id="hero" className="hero">
+            <div className="hero-text">
+                <h1 className="hero-title">Maya Ron</h1>
+                <h2 className="hero-subtitle">CS & Entrepreneurship Student</h2>
+                <p className="hero-description">
+                    With a strong background in leading teams and solving challenges, I am excited to start my journey in development or product management. I bring a passion for innovation and a solid foundation in Computer Science and Entrepreneurship.
+                </p>
+                <button className="hero-button">Download My CV</button>
             </div>
         </section>
     );
