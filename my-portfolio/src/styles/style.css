@@ -405,3 +405,63 @@ footer {
     color: #2b6777;
   }
   
+  .posts-section {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+  
+  .posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .post-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-content {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .post-title {
+    font-family: "Teko", sans-serif;
+    font-size: 1.8rem;
+    color: #2b6777;
+    margin-bottom: 1rem;
+  }
+  
+  .post-excerpt {
+    font-family: "Gotu", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #2b6777;
+    margin-bottom: 1.5rem;
+  }
+  
+  .post-link-button {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 10px 20px;
+    font-family: "Gotu", sans-serif;
+    font-size: 1rem;
+    color: white;
+    background-color: #52ab98;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .post-link-button:hover {
+    background-color: #73c1af;
+  }
+  

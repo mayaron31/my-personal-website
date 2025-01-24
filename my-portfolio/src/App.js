@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Timeline from "./components/Timeline";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Posts from "./components/Posts";
 import './styles/style.css';
 
 function App() {
@@ -27,6 +28,11 @@ function App() {
       {/* Projects Section */}
       <section id="projects">
         <Projects />
+      </section>
+
+      {/* Timeline Section */}
+      <section id="posts">
+        <Posts />
       </section>
 
       {/* Skills Section */}
