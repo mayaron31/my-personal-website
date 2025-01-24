@@ -1,28 +1,22 @@
-import React from "react";
+import React from 'react';
 
-const skills = [
-    { name: "HTML & CSS", level: "90%" },
-    { name: "JavaScript", level: "80%" },
-    { name: "React", level: "70%" },
-    { name: "Python", level: "85%" },
-];
-
-const Skills = () => {
+function Skills() {
     return (
-        <section id="skills">
-            <h2>My Skills</h2>
-            <div className="row">
-                {skills.map((skill, index) => (
-                    <div key={index} className="skill-card">
-                        <h3>{skill.name}</h3>
-                        <div className="progress-bar">
-                            <span className="progress" style={{ width: skill.level }}></span>
-                        </div>
-                    </div>
-                ))}
+        <section className="skills">
+            <h2 className="section-title">My Skills</h2>
+            <div className="section-body">
+                <div className="skill-item">
+                    <h4>HTML & CSS</h4>
+                </div>
+                <div className="skill-item">
+                    <h4>JavaScript</h4>
+                </div>
+                <div className="skill-item">
+                    <h4>React</h4>
+                </div>
             </div>
         </section>
     );
-};
+}
 
 export default Skills;

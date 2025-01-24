@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Gotu', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -20,7 +20,10 @@ body {
 
 .font-section-title {
     font-family: 'Teko', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2b6777;
+    text-align: center;
 }
 
 .font-body {
@@ -71,142 +74,123 @@ header {
 }
 
 /* Hero Section */
-.hero-container {
+.hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 2rem;
-    background-color: #afafaf;
+    padding: 30px 20px; /* Adjusted padding for smaller white spaces */
+    background-color: #f8f9fa;
 }
 
 .hero-image {
     width: 100%;
     height: auto;
     object-fit: cover;
-    position: relative;
-    z-index: 1;
-    margin-top: 60px;
-}
-
-.hero-text {
-    font-family: 'Great Vibes', cursive;
-    background-color: #9c9c9c;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.hero-text h1 {
-    font-size: 3rem;
     margin-bottom: 15px;
 }
 
-.hero-text p {
-    font-family: 'Gotu', sans-serif;
-    font-size: 1.2rem;
+.hero-title {
+    font-family: 'Pacifico', serif;
+    font-size: 3.5rem;
+    color: #2b6777;
 }
 
-.hero-text .btn {
+.hero-subtitle {
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+    color: #52ab98;
+}
+
+.hero-description {
+    font-family: 'Gotu', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #2b6777;
+    margin-bottom: 25px;
+}
+
+.hero-button {
     background-color: #52ab98;
-    color: #ffffff;
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.hero-text .btn:hover {
+.hero-button:hover {
     background-color: #73c1af;
 }
 
 /* Section Titles */
 .section-title {
     font-family: 'Teko', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
     color: #2b6777;
     text-align: center;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
+    margin-bottom: 1.5rem;
 }
 
-/* Sections */
-section {
-    padding: 3rem 0;
+/* Section Body */
+.section-body {
+    font-family: 'Gotu', sans-serif;
+    font-size: 1.2rem;
+    color: #2b6777;
+    line-height: 1.6;
     text-align: center;
-}
-
-section:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-section:nth-child(odd) {
-    background-color: #52ab98;
-    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* מרכז את כל התוכן */
+    gap: 1rem; /* ריווח בין הפריטים */
 }
 
 /* Contact Section */
-.contact--section {
-    padding: 3rem 0;
-    background-color: #c8d8e4;
+.contact-section {
     text-align: center;
+    padding: 2rem 0;
+    background-color: #f9f9f9;
 }
 
-.contact--section h2 {
+.contact-section h2 {
     font-family: 'Teko', sans-serif;
     font-size: 2.5rem;
-    color: #2b6777;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
-.contact--section p {
+.contact-description {
     font-family: 'Gotu', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #2b6777;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
-.contact--form--container {
-    width: 70%;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.contact--form--container label {
-    display: block;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.contact--form--container input,
-.contact--form--container textarea,
-.contact--form--container select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.contact-button {
     font-family: 'Gotu', sans-serif;
-}
-
-.contact--form--container .btn {
-    display: block;
-    width: 100%;
-    background-color: #52ab98;
-    color: #ffffff;
-    padding: 10px;
-    border: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    color: #2b6777;
+    border: 2px solid #2b6777;
     border-radius: 5px;
-    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    transition: all 0.3s ease;
 }
 
-.contact--form--container .btn:hover {
-    background-color: #73c1af;
+.contact-button:hover {
+    background-color: #2b6777;
+    color: white;
 }
 
 /* Footer */
@@ -215,4 +199,57 @@ footer {
     color: #2b6777;
     padding: 1rem 0;
     text-align: center;
+}
+
+/* Timeline Section */
+.timeline {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+}
+
+.timeline-title {
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #2b6777;
+    margin-bottom: 2rem;
+}
+
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* מרכז את התוכן */
+    gap: 1.5rem; /* רווח בין הפריטים */
+}
+
+.timeline-item {
+    background-color: #ffffff;
+    border: 2px solid #2b6777;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 600px; /* רוחב מקסימלי */
+    width: 100%; /* מתאים לכל גודל חלון */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left; /* תוכן בפנים מיושר לשמאל */
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px); /* אפקט הצפה */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item h4 {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+    color: #2b6777;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item p {
+    font-family: 'Gotu', sans-serif;
+    font-size: 1rem;
+    color: #2b6777;
+    line-height: 1.6;
 }
