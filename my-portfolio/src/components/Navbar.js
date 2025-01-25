@@ -102,7 +102,7 @@ function Navbar() {
 
             {/* Main Image */}
             <div>
-                <img src={mainPagePhoto} alt="Main Page" className="hero-image" />
+                {/* <img src={mainPagePhoto} alt="Main Page" className="hero-image" /> */}
             </div>
         </>
     );
