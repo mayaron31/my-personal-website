@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import mainPagePhoto from "../assets/images/main-page-photo.jpg";
+
 
 function Navbar() {
     const [navActive, setNavActive] = useState(false);
@@ -100,10 +100,7 @@ function Navbar() {
                 </nav>
             </header>
 
-            {/* Main Image */}
-            <div>
-                {/* <img src={mainPagePhoto} alt="Main Page" className="hero-image" /> */}
-            </div>
+
         </>
     );
 }

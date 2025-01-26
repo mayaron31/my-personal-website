@@ -6,7 +6,7 @@ const Hero = () => {
         <section className="hero">
             <div className="hero-content">
                 <h1 className="hero-title">Maya Ron</h1>
-                <h2 className="hero-subtitle">Aspiring Software Engineer & Product Leader</h2>
+                <h2 className="hero-subtitle">Computer Science Student</h2>
                 <p className="hero-description">
                     Highly motivated and independent Computer Science student with strong project
                     management and AI technology experience. Skilled in analyzing data, optimizing
