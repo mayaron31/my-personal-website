@@ -12,6 +12,8 @@ const Hero = () => {
                     management and AI technology experience. Skilled in analyzing data, optimizing
                     AI-driven solutions, and leading teams under pressure.
                 </p>
+                <a href="/cv.pdf" download className="hero-resume-link">
+                    Download My Resume</a>
             </div>
             <div className="hero-image-container">
                 <img

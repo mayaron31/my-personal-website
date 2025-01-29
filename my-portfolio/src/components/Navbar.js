@@ -19,9 +19,7 @@ function Navbar() {
                 <nav className={`navbar ${navActive ? "active" : ""}`}>
                     <div className="navbar-container">
                         {/* Logo */}
-                        <div className="navbar-logo">
-                            <a href="#home">Maya Ron</a>
-                        </div>
+
 
                         {/* Hamburger Menu */}
                         <div

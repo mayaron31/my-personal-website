@@ -161,6 +161,24 @@ header {
     margin-bottom: 25px;
 }
 
+.hero-resume-link {
+  display: inline-block; /* שומר את הקישור כשורה נפרדת */
+  margin-top: 20px; /* רווח בין הקישור לטקסט למעלה */
+  font-family: 'Gotu', sans-serif; /* גופן תואם */
+  font-size: 1.2rem; /* גודל טקסט */
+  color: #2b6777; /* צבע טקסט */
+  text-decoration: none; /* מסיר קו תחתון */
+  background-color: #52ab98; /* רקע */
+  padding: 10px 20px; /* ריווח פנימי */
+  border-radius: 5px; /* עיגול פינות */
+  transition: background-color 0.3s ease; /* אפקט מעבר */
+}
+
+.hero-resume-link:hover {
+  background-color: #73c1af; /* שינוי רקע בהובר */
+  color: white; /* צבע טקסט בהובר */
+}
+
 
 /* Section Titles */
 .section-title {
