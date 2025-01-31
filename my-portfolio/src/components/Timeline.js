@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function Timeline() {
     const timelineData = [
         { year: "2012", image: "/images/classmates.JPG", text: "Graduated high school with a dual focus on arts and biology, achieving a GPA of 114." },
-        { year: "2018", image: "/images/2018.jpg", text: "Enlisted in the IDF and served in the special operations room along the Lebanese border." },
+        { year: "2018", text: "Enlisted in the IDF and served in the special operations room along the Lebanese border." },
         { year: "2019", image: "/images/hm.JPG", text: "Served as an Operations Officer in Unit 88, managing a team of 20 soldiers and collaborating with Product Managers." },
         { year: "2021", text: "Promoted to Control Officer, overseeing 50+ reservists and ensuring operational readiness." },
         { year: "2022", image: "/images/dev-vlub.JPG", text: "Started Computer Science and Entrepreneurship studies at Reichman University, participated in Tech-bootcamp as a leader and development club." },
