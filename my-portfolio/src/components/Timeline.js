@@ -35,10 +35,10 @@ function Timeline() {
                     {timelineData.map((item, index) => (
                         <div
                             className={`timeline-card ${index === currentIndex
-                                    ? "active"
-                                    : index === currentIndex - 1 || index === currentIndex + 1
-                                        ? "nearby"
-                                        : "inactive"
+                                ? "active"
+                                : index === currentIndex - 1 || index === currentIndex + 1
+                                    ? "nearby"
+                                    : "inactive"
                                 }`}
                             key={index}
                         >
