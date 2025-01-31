@@ -7,7 +7,7 @@ function Posts() {
     // Load environment variables
     const ACCESS_TOKEN = process.env.REACT_APP_LINKEDIN_ACCESS_TOKEN;
     const PROFILE_ID = process.env.REACT_APP_LINKEDIN_PROFILE_ID;
-    const linkedInProfile = "https://www.linkedin.com/in/maya-ron";
+    const linkedInProfile = "https://www.linkedin.com/in/maya--ron";
 
     // CORS Proxy URL (Run your proxy server on port 8080)
     const PROXY_URL = "http://localhost:8080/";

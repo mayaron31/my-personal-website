@@ -47,6 +47,18 @@ function Navbar() {
                             </li>
                             <li>
                                 <Link
+                                    to="timeline"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                    onClick={closeMenu}
+                                >
+                                    My Journey
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
                                     to="projects"
                                     spy={true}
                                     smooth={true}
@@ -54,7 +66,21 @@ function Navbar() {
                                     duration={500}
                                     onClick={closeMenu}
                                 >
-                                    Projects
+                                    My Portfolio
+                                </Link>
+                            </li>
+
+
+                            <li>
+                                <Link
+                                    to="posts"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                    onClick={closeMenu}
+                                >
+                                    Latest Posts
                                 </Link>
                             </li>
                             <li>
@@ -66,21 +92,10 @@ function Navbar() {
                                     duration={500}
                                     onClick={closeMenu}
                                 >
-                                    Skills
+                                    My Expertise
                                 </Link>
                             </li>
-                            <li>
-                                <Link
-                                    to="timeline"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-70}
-                                    duration={500}
-                                    onClick={closeMenu}
-                                >
-                                    Timeline
-                                </Link>
-                            </li>
+
                             <li>
                                 <Link
                                     to="contact"
@@ -90,7 +105,7 @@ function Navbar() {
                                     duration={500}
                                     onClick={closeMenu}
                                 >
-                                    Contact
+                                    Contact Me
                                 </Link>
                             </li>
                         </ul>
