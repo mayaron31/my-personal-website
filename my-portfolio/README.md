@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# 🖥️ My Personal Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 **Personal portfolio website showcasing my journey, projects, and experience.**
 
-## Available Scripts
+![Website Preview](https://your-image-link-here) _(אם יש לך תמונת מסך של האתר, ניתן להוסיף קישור לתמונה כאן)_
 
-In the project directory, you can run:
+## 📌 **About the Project**
 
-### `npm start`
+This is my **personal website**, built to highlight my experience, projects, and achievements in **Computer Science & Entrepreneurship**. The website is designed with a modern, responsive layout and includes interactive components such as a **timeline section**, **dynamic LinkedIn feed**, and **project showcase**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🎨 **Key Features**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+✅ **Responsive Design** – Fully optimized for desktop, tablet, and mobile devices.  
+✅ **Hero Section** – Introduction about me with a clean and minimalistic design.  
+✅ **Timeline Component** – An interactive timeline that showcases my journey and achievements dynamically.  
+✅ **Project Showcase** – Highlights key projects I’ve worked on, with descriptions and links.  
+✅ **Live LinkedIn Feed** – Automatically updates with my latest LinkedIn posts.  
+✅ **Dark/Light Mode (Optional)** – _(If implemented, mention it here!)_
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ **Technologies Used**
 
-### `npm run build`
+- **Frontend:** React.js, HTML5, CSS3
+- **Styling:** Tailwind CSS / Custom CSS
+- **State Management:** React Hooks (useState)
+- **LinkedIn API** – Fetching real-time posts
+- **Deployment:** _(Netlify / Vercel / GitHub Pages - אם לא פרסמת עדיין, ניתן להשאיר ריק)_
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 **Setup & Installation**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run this project locally, follow these steps:
 
-### `npm run eject`
+```bash
+# Clone the repository
+git clone https://github.com/mayaron31/my-personal-website.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Navigate into the project directory
+cd my-personal-website
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Install dependencies
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Start the development server
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This will launch the website on `http://localhost:3000/`.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📂 **Project Structure**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+my-personal-website/
+│── public/            # Static files
+│── src/
+│   ├── components/    # Reusable UI components
+│   ├── pages/         # Main page layouts
+│   ├── assets/        # Images and other static assets
+│   ├── App.js         # Main app component
+│   ├── index.js       # Entry point
+│── styles/            # Custom CSS and styling
+│── package.json       # Dependencies and scripts
+│── README.md          # Project documentation
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📅 **Future Improvements**
 
-### Analyzing the Bundle Size
+🔹 **Add a blog section** for sharing insights and technical articles.  
+🔹 **Enhance animations** in the timeline and project sections.  
+🔹 **Improve SEO** and performance optimization.  
+🔹 **Deploy the website** on Netlify or Vercel.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📬 **Connect with Me**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+💼 **LinkedIn:** [maya-ron](https://www.linkedin.com/in/maya-ron)  
+📧 **Email:** mayaron31@gmail.com
 
-### Advanced Configuration
+Feel free to reach out if you have any questions or suggestions! 🚀
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+💡 **If you like this project, don't forget to ⭐ the repository!** 🎉
