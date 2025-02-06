@@ -7,7 +7,7 @@ function Projects() {
             description:
                 "A travel blog documenting my experiences during a student exchange program. The platform allows users to explore various travel destinations and personal insights.",
             technologies: ["React", "CSS", "JavaScript", "Firebase"],
-            image: "./images/travel-blog.png", // Replace with actual image URL
+            image: "./images/travel.png", // Replace with actual image URL
             github: "https://github.com/mayaron31/Exchange-Travel-Blog",
         },
         {
