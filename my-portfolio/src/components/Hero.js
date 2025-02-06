@@ -4,17 +4,6 @@ import "../styles/style.css";
 const Hero = () => {
     return (
         <section className="hero">
-            <div className="hero-content">
-                <h1 className="hero-title">Maya Ron</h1>
-                <h2 className="hero-subtitle">Computer Science Student</h2>
-                <p className="hero-description">
-                    Highly motivated and independent Computer Science student with strong project
-                    management and AI technology experience. Skilled in analyzing data, optimizing
-                    AI-driven solutions, and leading teams under pressure.
-                </p>
-                <a href="/cv.pdf" download className="hero-resume-link">
-                    Download My Resume</a>
-            </div>
             <div className="hero-image-container">
                 <img
                     className="hero-image"
@@ -32,6 +21,18 @@ const Hero = () => {
                     </li>
                 </ul>
             </div>
+            <div className="hero-content">
+                <h1 className="hero-title">Maya Ron</h1>
+                <h2 className="hero-subtitle">Computer Science Student</h2>
+                <p className="hero-description">
+                    Highly motivated and independent Computer Science student with strong project
+                    management and AI technology experience. Skilled in analyzing data, optimizing
+                    AI-driven solutions, and leading teams under pressure.
+                </p>
+                <a href="/cv.pdf" download className="hero-resume-link">
+                    Download My Resume</a>
+            </div>
+
         </section>
     );
 };
